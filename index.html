@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed Notes</title>
+     <!-- Stylesheet-->
+     <link rel="stylesheet" href="./style.css">
+     <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/df5446c60a.js" crossorigin="anonymous"></script>
+     <!-- MAterial icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+
+ 
+ 
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Abo Ayman Notes</h1>
+            <form action="">
+                <input type="text" id="note-title" placeholder="Note title" />
+                <textarea name="" id="note-text" placeholder="Note details"></textarea>
+            <button id="add-btn"><span class="material-icons-sharp">add_circle</span></button>
+            </form>
+         
+        </div>
+    </header>
+
+    <!--? MY NOTES -->
+    <section>
+        <div class="container">
+            <h2>My Notes</h2>
+            <hr>
+            <div id="notes">
+                <!-- <div id="note">
+                    <p class="note-counter">Note 1</p>
+                    <h3 class="note-title">Hello World</h3>
+                    <p class="note-text">some note text</p>
+                    <button id="delete-btn"><span class="material-icons-sharp">delete</span></button>
+                    <button id="edit-btn"><span class="material-icons-sharp">edit_note</span></button>
+                    
+                </div> -->
+               
+            </div>
+        </div>
+    </section>
     
+    <script src="index.js"></script>
 </body>
 </html>
