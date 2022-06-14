@@ -69,6 +69,11 @@ function createNotes(text,index){
        
 
     })
+    editBtn.addEventListener('click',(e)=>{
+        alert(index)
+        editNote(index)
+
+    })
 
 }
 
@@ -115,4 +120,19 @@ function deleteNote(index){
 
     }
    
+}
+
+//? Function to edit note
+function editNote(index){
+    if(noteTitle.value !=='' || noteText.value !==''){
+        return alert("Please clear the form before editing a note")
+    }
+    noteObj = checkLocalStorage()
+    noteObj.findIndex((element,index)=>{
+        noteTitle.value =element.title
+        noteText.value = element.text
+    })
+    noteObj.splice(index,1);
+    localStorage.setItem('notes', JSON.stringify(noteObj))
+
 }
